@@ -1,0 +1,542 @@
+    *
+    {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-color: white;
+    }
+
+    .top
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(to right, #ffd6e0, #d4ffdc);
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .biaoti
+    {
+        color: #f29f9f;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 23px;
+        font-weight: 600;
+    }
+    .biaoqian
+    {
+        font-size: larger;
+        font-weight: 500;
+        color: #16572e;
+        display: flex;
+        gap: 30px;
+    }
+    .shouye
+    {
+        font-weight: 600;
+        border-bottom: 2px solid #21050c;
+    }
+
+    .sign-icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .sign
+    {
+        display: flex;
+        font-weight: 570;
+        color: #16572e;
+        gap: 25px;
+        align-items: center;
+    }
+    .sign span {
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .in:hover
+    {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #ff7a9c, #ff9eb0);
+        color: white;
+        box-shadow: 0 2px 8px rgba(255,122,156,0.3);
+    }
+    .up:hover
+    {
+        transform: scale(1.05);
+        background: linear-gradient(to right, #7ed6a5, #a8f0c6);
+        color: white;
+        box-shadow: 0 2px 8px rgba(126,214,165,0.3);
+    }
+
+    /* 图标容器 */
+    .icons {
+        display: flex;
+        gap: 20px;
+        font-size: 22px;
+        margin-left: 25px;
+    }
+
+    .icon {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        color: #16572e;
+    }
+
+    .icon:hover {
+        transform: rotate(360deg);
+    }
+
+    .hhh
+    {
+        position: relative;
+        padding: 60px 80px;
+        width: 85%;
+        height: 420px;
+        margin: 15px auto;
+        border-radius: 11px;
+        background: linear-gradient(to right,#ffd6e0,#d4ffdc);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first {
+        flex: 1;
+    }
+    .tehui
+    {
+        font-size: 50px;
+        font-weight: 700;
+        font-family:'Times New Roman', Times, serif;
+        color: rgb(254, 254, 254);
+    }
+    .biaoyu
+    {
+        margin-top: 15px;
+        color: aliceblue;
+        font-size: 17px;
+    }
+    .qianggou
+    {
+        display: inline-block;
+        width: 135px;
+        margin-top: 25px;
+        background-color: #fff;
+        color: #ff7a9c;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .qianggou:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .yyy
+    {
+        width: 150px;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+    }
+    .fenlei
+    {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    .liebiao
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    i
+    {
+        margin-left: 10px;
+        font-size: 9px;
+    }
+    .liebiao:hover
+    {
+        background-color: #f6e8e8;
+    }
+
+    .fff
+    {
+
+    }
+    .content
+    {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .tuijian
+    {
+        margin-top: 11px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #eebbbb;
+    }
+    
+    .book
+    {
+        display: flex;
+        gap: 17px;
+        padding-bottom: 10px;
+    }
+    .book-card
+    {
+        width: 160px;
+        background-color: #fcf1f1;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .photo
+    {
+        width: 100%;
+        height: 150px;
+        background-color: #f1fff2;
+    }
+    .photo img
+    {
+        width: 100%;
+        object-fit: cover;
+    }
+    .book2
+    {
+        padding: 12px;
+    }
+    .book-name
+    {
+        font-size: 13px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    .price
+    {
+        font-size: 16px;
+        color: #ff4d4f;
+        font-weight: bold;
+    }
+    .price span
+    {
+        font-size: 13px;
+        color: #999;
+        text-decoration: line-through;
+        margin-left: 6px;
+    }
+
+    .activity
+    {
+        width: 200px;
+        background-color: #fcf1f1;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        border-radius: 8px;
+        padding: 15px;
+    }
+    .activity-title
+    {
+        font-size: 19px;
+        font-weight: 600;
+        color: #f0a7a7;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .activity-item
+    {
+        display: flex;
+        align-items: center;
+        padding: 13px 0;
+    }
+    .rank3,.rank5
+    {
+        width: 20px;
+        background-color: #ffd6e0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        margin-right: 13px;
+    }
+    .rank3
+    {
+        background-color: #ff7a9c;
+        color: white;
+    }
+    .activity-name
+    {
+        font-size: 17px;
+        color: #333;
+        margin-bottom: 3px;
+    }
+    .activity-price
+    {
+        font-size: 15px;
+        color: #ff4d4f;
+        font-weight: bold;
+    }
+
+    .bottom
+    {
+        border-radius: 11px;
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(to right,#eebbbb,#f1fff2);
+        color: #eb8080;   
+        text-align: center;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    /* 登录与注册表单样式 */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: 400px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .modal-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #eebbbb;
+    }
+
+    .close {
+        font-size: 24px;
+        cursor: pointer;
+        color: #999;
+    }
+
+    .close:hover {
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #ff7a9c;
+    }
+
+    .form-button {
+        width: 100%;
+        padding: 12px;
+        background-color: #ff7a9c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .form-button:hover {
+        background-color: #ff5c85;
+    }
+
+    .form-footer {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .form-footer a {
+        color: #ff7a9c;
+        text-decoration: none;
+    }
+
+    .form-footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* 成功提示样式 */
+    .success-message {
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #52c41a;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        z-index: 1001;
+    }
+
+    /* 热门推荐图片悬停动效 */
+    .book-card {
+        transition: all 0.3s ease;
+    }
+
+    .book-card:hover {
+        transform: translateX(10px) scale(1.05);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* 轮播图容器 */
+    .carousel-container {
+        width: 350px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-left: 50px;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: carousel 8s infinite;
+    }
+
+    .carousel-item:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .carousel-item:nth-child(2) {
+        animation-delay: 2.67s;
+    }
+
+    .carousel-item:nth-child(3) {
+        animation-delay: 5.34s;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes carousel {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        10% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        30% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        40% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
+
+    /* 登录按钮悬停动效 */
+    .sign .in {
+        position: relative;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .sign .in::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,122,156,0.3), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .sign .in:hover {
+        transform: scale(1.1);
+        background: linear-gradient(to right, #ff7a9c, #ff9eb0);
+        color: white;
+    }
+
+    .sign .in:hover::before {
+        left: 100%;
+    }
+
+    /* 图标容器 */
+    .icons {
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .icon {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+        transform: rotate(360deg);
+    }
